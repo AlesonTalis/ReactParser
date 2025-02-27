@@ -8,16 +8,23 @@ const componentConfig = {
   Screen: {
     component: Box,
     sxProps: true,
+    props: {
+      gap: 'gap',
+    }
   },
   Section: {
     component: Box,
     sxProps: true,
+    props: {
+      gap: 'gap',
+      alignContent: 'alignContent',
+    }
   },
   Text: {
     component: Typography,
     childrenProp: 'value',
     props: {
-      align: 'align',
+      align: 'alignContent',
       size: 'fontSize'
     },
     sxProps: true,
@@ -119,6 +126,9 @@ function buildAST(lines) {
       styles: {},
       children: [],
     };
+
+    node.styles.display = 'flex';
+    node.styles.flexDirection = 'column';
 
     let lastSxKey = null;
 
