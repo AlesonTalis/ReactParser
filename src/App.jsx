@@ -1,6 +1,7 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import "./app.css"
 import DeepSeek from './pages/deep_seek'
+import Claude from './pages/claude'
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<div>Home</div>} />
             <Route path="/deepseek" element={<DeepSeek />} />
-            <Route path="/claude" element={<div>Claude</div>} />
+            <Route path="/claude" element={<Claude />} />
             <Route path="/chatgpt" element={<div>ChatGPT</div>} />
           </Routes>
         </section>
