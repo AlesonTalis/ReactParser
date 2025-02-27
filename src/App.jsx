@@ -2,6 +2,7 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import "./app.css"
 import DeepSeek from './pages/deep_seek'
 import Claude from './pages/claude'
+import ChatGPT from './pages/chatgpt'
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
             <Route path="/" element={<div>Home</div>} />
             <Route path="/deepseek" element={<DeepSeek />} />
             <Route path="/claude" element={<Claude />} />
-            <Route path="/chatgpt" element={<div>ChatGPT</div>} />
+            <Route path="/chatgpt" element={<ChatGPT />} />
           </Routes>
         </section>
       </div>
